@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.svg" alt="Logo alura">
+    </header>
+    <main>
+        <section class="seccion-1">
+            <div class="contenedor-texto">
+                <input class="caja-texto" type="text"
+                placeholder="Ingrese el texto aqui" title="Solo utilice letras minusculas y sin caracteres especiales">
+                <!-- <textarea class="caja-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea> -->
+            </div>
+            <div class="alerta">
+                <img src="img/alerta.svg" alt="simbolo de alerta">
+                <p class="texto-alerta">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <input type="button" class="btn-encriptar" value="Encriptar" onclick="btnEncriptar()" >
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="btnDesencriptar()">
+            </div>
+        </section>
+
+        <section class="seccion-2">
+            <textarea class="resultado" cols="30" rows="10"></textarea>
+            <div class="dibujo">
+                <img src="img/dibujo.svg" alt="dibujo alura">
+            </div>
+            <div class="mensaje">
+                <h4>Ningun mensaje fue <br> encontrado </h4>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar </p>
+            </div>
+            <div class="copiar">
+                <input type="button" class="btn-copiar" value="Copiar" onclick="btnCopiar()">
+            </div>
+
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
